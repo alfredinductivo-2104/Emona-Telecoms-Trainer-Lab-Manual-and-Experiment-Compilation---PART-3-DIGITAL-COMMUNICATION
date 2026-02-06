@@ -4,12 +4,13 @@
 
 ## INTRODUCTION:
 
-
+As the world of telecommunications evolves day by day, digital transmission has largely superseded analog methods due to its superior resistance to electrical noise and interference. However, because natural signals like speech and music are inherently analog, they must first undergo a conversion process to be transmitted digitally. This process begins with sampling, where the continuous voltage of an analog message is measured at precise, regular intervals this depends of the systems requirements. While sampling only captures discrete pieces of a message, the original signal can be recovered through the principles of frequency multiplication. Additionally, the reconstruction of the signal is made possible by passing the sampled data through a low-pass filter, which isolates the original message by rejecting the higher-frequency harmonics and sidebands created during the sampling process.
 
 ---
 
-## OBJECTIVE
+## OBJECTIVE:
 
+In this experiment, we will be able to use the Emona Telecoms-Trainer to produce a sample message signal using natural sampling and a sample and hold scheme. Additionally, we will be able to understand how to properly reconstruct a message signal and examine the effect of aliasing to the signal.
 
 ---
 
