@@ -68,65 +68,57 @@ It is observed that the red waveform is the original analog message (sinewave) a
 
 <img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/0e1bc74b-6efa-489e-b4a7-be92185e12bc" />
 
-### 4. Decoding the PCM Data with Buffer Module
+### 4. Encoding and Decoding Speech
 
-In this part of the experiment we add a Buffer to the output of the PCM Encoder. Refer the connection to the figure below.
+In the next part of the experiment, a speech signal will be encoded and decoded to replicate a real-world communication application. This demonstrates how PCM systems are used in practical scenarios such as digital telephony, where voice signals are converted into digital data for transmission and then reconstructed at the receiver. Refer the connection to the figure below.
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/39f11c47-2c1b-43af-b4e2-496ff3dee1b1" />
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/2cec5792-9157-4661-9193-1f61cfb43e40" />
 
 #### 4.1 OBSERVATION
 
-It is observed that the red waveform is the original analog input and the yellow waveform is the reconstructed output signal that has passed through the Buffer module. It is observed that as we turn the gain up stretches the yellow "staircase" waveform vertically, making the reconstructed signal taller than the original red input. Additionally, when the gain is turned too high, the output  hit the system's limits, causing the tops of the reconstructed wave to flatten out or become distorted.
+It is observed that the red waveform is the original speech signal and the yellow waveform is the reconstructed speech output from the PCM decoder. Unlike a simple sinewave, a speech signal is highly complex and irregular. When this signal is processed through the PCM Encoder, it is sampled at a high rate . Each unique peak and valley of the voice is converted into a digital code. The yellow waveform is observe to show the decoder’s attempt to rebuild that voice. 
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/8ad790d9-bf8f-4914-879d-fbbc81e6f4f4" />
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/dfc14146-e208-448a-bb0c-0d49ab9386ff" />
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/0a36b380-fc45-45d0-936a-4b426f2feff4" />
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/a410e007-4129-44d9-b71a-6bf04de67894" />
 
-### 5. Decoding the PCM Data with Buffer Module and VC0. 
+### 5. Recovering the Message
 
+In the last part of the experiment, we will be able to reconstruct the PCM decoder output using a low pass filter. Refer the connection to the figure and block diagram below.
 
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/97f264e2-f136-410b-9fd2-4f142db033b5" />
 
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/6ac7bfe8-fcfc-461a-951c-8859318f9fff" />
 
 #### 5.1 OBSERVATION
 
-### 6. Encoding and Decoding Speech
+It is observed that the red waveform is the original analog message (sinewave) and the yellow waveform is the filtered output signal after passing through the reconstruction filter. In its current state, the yellow signal is observe to be highly distorted. This happens because the filter's "cut-off" frequency needs to be tuned correctly to allow the original message's frequency through while blocking the high-frequency sampling noise.
 
-
-
-
-#### 6.1 OBSERVATION
-
-### 7. Recovering the Message
-
-
-
-
-#### 7.1 OBSERVATION
-
-
-
-
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/2ede565b-4c6b-443e-af87-7494ea6d97ce" />
 
 ---
 
 ## LAB QUESTIONS AND ANSWERS:
 
-**Q1:What type of sampling is shown in the first part of the experiment? and What two features of the sampled signal confirm this? **
+**Q1: What does the PCM Decoder stepped output tell you about the type of signal that is?  **
 
+The stepped output of the PCM Decoder shows that the signal is a pulse-amplitude modulated (PAM) version of the original analog signal. Each step corresponds to a discrete voltage level representing a sampled value of the original signal.
 
-**Q2:What two features of the sampled signal confirm that the set-up models the sample-and-hold scheme?**  
+**Q2: What must be done to the PCM Decoder Module output to reconstruct the message properly? **  
 
+To properly reconstruct the original message, the stepped output must be passed through a low-pass filter. This smooths out the steps and produces a continuous analog signal that approximates the original waveform.
 
-**Q3: What’s the name of the distortion that appears when the VCO module’s Frequency Adjust control is turned far enough?**  
+**Q3: Even though the two signals look and sound the same, why isn't the reconstructed message a perfect copy of the original message? ** 
 
-
-**Q4: Given the message is a 2kHz sinewave, what’s the theoretical minimum frequency for the sampling signal?**
-
-
-**Q4: Why is the actual minimum sampling frequency higher than the theoretical minimum that you calculated for Question 4**
-
+The reconstructed message isn’t perfect because of quantization error. Each sample is rounded to the nearest quantization level during encoding, so some small differences between the original and decoded signals are inevitable. Additionally, any sampling or filtering limitations may also introduce minor distortions.
 
 ---
 
 ## CONCLUSIONS:
-After analyzing the gathered data and observations about Sampling and Reconstruction of a signal, the following conclusions have been made:
+After analyzing the gathered data and observations about PCM Decoding, the following conclusions have been made:
+- PCM decoding successfully converts a digital PCM data stream back into an analog signal, demonstrating the reverse process of PCM encoding.
+- Proper reconstruction of the original signal requires passing the decoder’s stepped output through a low-pass filter to smooth the voltage steps into a continuous waveform.
+- Accurate decoding depends on clock and frame synchronization; the decoder must use the same clock and frame signals as the encoder to interpret the digital data correctly.
+- Decoding a simple sinewave shows that the reconstructed output follows the same shape and frequency but appears as a staircase due to discrete sampling. While, Decoding a complex signal, such as speech, demonstrates how PCM can handle real-world signals, though the reconstructed waveform may still show minor irregularities.
+- The reconstructed message is not a perfect copy of the original due to quantization error and the limitations of sampling and filtering.
+- Adjusting the low-pass filter is essential for reducing distortion and recovering the message more accurately.
