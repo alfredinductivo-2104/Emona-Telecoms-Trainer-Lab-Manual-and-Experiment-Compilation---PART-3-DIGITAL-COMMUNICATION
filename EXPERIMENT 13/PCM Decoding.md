@@ -4,11 +4,13 @@
 
 ## INTRODUCTION:
 
+Pulse Code Modulation (PCM) decoding is the process of recovering an analog signal from a stream of binary data produced by PCM encoding. The decoder identifies each data frame, converts the binary numbers into proportional voltage levels, and holds each value until the next frame is decoded, forming a pulse amplitude modulated (PAM) signal. This PAM signal is then passed through a low-pass filter to reconstruct the original message. Proper clock and frame synchronization are essential for accurate decoding; therefore, the PCM Decoder module on the Emona Telecoms-Trainer 101 uses the same clock and frame synchronization signals as the PCM Encoder module to ensure correct signal recovery.
 
 ---
 
 ## OBJECTIVES:
 
+In this experiment, we will be able to use the Emona Telecoms-Trainer 101 to convert a sinewave and speech to a PCM data stream then convert it to a PAM signal using the PCM Decoder module. For this to work correctly, the decoder's clock and frame synchronisation signal are simply "stolen" the PCM Encoder module. You'll then recover the message using the Tuneable Low-pass filter module.
 
 ---
 
