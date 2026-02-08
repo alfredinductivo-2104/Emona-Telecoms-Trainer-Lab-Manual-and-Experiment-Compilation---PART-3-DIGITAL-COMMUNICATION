@@ -70,10 +70,17 @@ It is observed that the red waveform is the original analog message (sinewave) a
 
 ### 4. Decoding the PCM Data with Buffer Module
 
+In this part of the experiment we add a Buffer to the output of the PCM Encoder. Refer the connection to the figure below.
 
-
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/39f11c47-2c1b-43af-b4e2-496ff3dee1b1" />
 
 #### 4.1 OBSERVATION
+
+It is observed that the red waveform is the original analog input and the yellow waveform is the reconstructed output signal that has passed through the Buffer module. It is observed that as we turn the gain up stretches the yellow "staircase" waveform vertically, making the reconstructed signal taller than the original red input. Additionally, when the gain is turned too high, the output  hit the system's limits, causing the tops of the reconstructed wave to flatten out or become distorted.
+
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/8ad790d9-bf8f-4914-879d-fbbc81e6f4f4" />
+
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/0a36b380-fc45-45d0-936a-4b426f2feff4" />
 
 ### 5. Decoding the PCM Data with Buffer Module and VC0. 
 
