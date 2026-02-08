@@ -4,11 +4,13 @@
 
 ## INTRODUCTION:
 
+In any communication system, a message is transmitted from a sender to a receiver through a channel, which may include metal conductors, optical fibers, or the air. Every transmission medium has a limited bandwidth, allowing only a specific range of frequencies to pass while attenuating frequencies outside this range. This filtering effect not only reduces the amplitude of certain signal components but also shifts their phase, potentially distorting the original signal. Digital signals, like analog signals, are composed of multiple sinewaves, the fundamental frequency and its harmonics. If the channel’s bandwidth is insufficient, some of these components are attenuated or lost, altering the signal’s shape. This distortion can lead to errors in interpreting logic levels in digital circuits, making the recovered message noisy.
 
 ---
 
 ## OBJECTIVES:
 
+In this experiment, we will use the Emona Telecoms-Trainer 101 to set up a PCM communication system. We will model the system by limiting the channel bandwidth using a Low Pass Filter (LPF). Additionally, we will observe the effect of bandwidth limitation on the PCM data using an oscilloscope and listen to how it affects the recovered message.
 
 ---
 
@@ -23,7 +25,7 @@
 
 ## SUMMARY OF FINDINGS AND RESULTS:
 
-### 1. Setting up the PCM Encoder 
+### 1. The Effects of Bandwidth Limiting on PCM Decoding
 
 
 
