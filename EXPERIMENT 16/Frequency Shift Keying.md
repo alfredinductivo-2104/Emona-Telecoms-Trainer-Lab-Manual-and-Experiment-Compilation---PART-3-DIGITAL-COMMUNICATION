@@ -119,7 +119,7 @@ The comparator compares the recovered signal to a reference voltage and switches
 ---
 
 ## CONCLUSIONS:
-After analyzing the gathered data and observations about Frequency Shift Keying (ASK), the following conclusions have been made:
+After analyzing the gathered data and observations about Frequency Shift Keying (FSK), the following conclusions have been made:
 - Frequency Shift Keying was successfully generated using a VCO, where digital data controlled the switching between mark and space frequencies.
 - The oscilloscope clearly showed frequency changes in the carrier signal corresponding to logic-1 and logic-0 states of the digital input.
 - Filtering proved effective in isolating one frequency component of the FSK signal, converting frequency changes into amplitude variations.
