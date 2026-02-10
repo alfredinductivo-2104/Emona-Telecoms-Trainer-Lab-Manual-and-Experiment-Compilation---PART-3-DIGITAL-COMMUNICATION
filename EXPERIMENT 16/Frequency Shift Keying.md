@@ -100,7 +100,7 @@ The VCO output frequency that corresponds to logic-0s is called the space freque
 
 The mark frequency is the higher frequency. This is observed on the oscilloscope where the carrier waveform increases in frequency whenever the digital input transitions to a logic-1 state, confirming the VCO’s response to a high input voltage.
 
-**Q4: Which of the FSK signal's two sinewave is the filter picking out??**
+**Q4: Which of the FSK signal's two sinewave is the filter picking out?**
 
 The filter picks out one of the two frequency components, specifically the frequency that falls within the filter’s passband (either the mark or space frequency depending on tuning).
 
@@ -108,7 +108,7 @@ The filter picks out one of the two frequency components, specifically the frequ
 
 The filtered FSK appears as a sinusoidal waveform with amplitude variations, where the presence or absence of the selected frequency produces changes in signal amplitude that can be detected by an envelope detector.
 
-**Q6: What can be used to clean up the recovered digital signal**
+**Q6: What can be used to clean up the recovered digital signal?**
 
 A comparator is used to clean up the recovered digital signal.
 
