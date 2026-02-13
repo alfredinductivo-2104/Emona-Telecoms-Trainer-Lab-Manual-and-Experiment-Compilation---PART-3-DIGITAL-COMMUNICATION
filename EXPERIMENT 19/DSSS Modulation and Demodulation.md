@@ -110,7 +110,7 @@ A more sophisticated approach to jamming involves automatically sweeping the jam
 
 #### 6.1 OBSERVATION
 
-In this setup, it is observed that while the system remains resistant to jamming, the swept-frequency interference introduces more noticeable fluctuations in the recovered output compared to a fixed-tone jammer. On the oscilloscope, the red waveform (Channel 1) shows the DSSS signal combined with a frequency-swept jamming signal, appearing as a dense, high-frequency mass with rapidly shifting characteristics. The yellow waveform (Channel 2) displays the recovered message, which still maintains its general sinusoidal shape despite the more aggressive interference but we can see that the recovered signal is more jammed than the previous setup. 
+It is observed that while the system remains resistant to jamming, the swept-frequency interference introduces more noticeable fluctuations in the recovered output compared to a fixed-tone jammer. On the oscilloscope, the red waveform (Channel 1) shows the DSSS signal combined with a frequency-swept jamming signal, appearing as a dense, high-frequency mass with rapidly shifting characteristics. The yellow waveform (Channel 2) displays the recovered message, which still maintains its general sinusoidal shape despite the more aggressive interference but we can see that the recovered signal is more jammed than the previous setup. 
 
 <img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/60ce2d93-c85a-45e9-a2fd-18fe14d15611" />
 
@@ -122,7 +122,7 @@ In the next part of the experiment, a much more sophisticated approach to jammin
 
 #### 7.1 OBSERVATION
 
-In this setup, it is observed that the more sophisticated jamming signal creates a noticeably more distorted and unstable output compared to the previous fixed or basic swept jamming experiments. The red waveform (Channel 1) shows a dense, highly irregular mass of interference with a peak-to-peak voltage (Vpp) of 3.800V. Consequently, the yellow waveform (Channel 2) displays a recovered message that is much more jagged and inconsistent in shape, with its dropping to 592.00mV.
+It is observed that the more sophisticated jamming signal creates a noticeably more distorted and unstable output compared to the previous fixed or basic swept jamming experiments. The red waveform (Channel 1) shows a dense, highly irregular mass of interference with a peak-to-peak voltage (Vpp) of 3.800V. Consequently, the yellow waveform (Channel 2) displays a recovered message that is much more jagged and inconsistent in shape, with its dropping to 592.00mV.
 
 <img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/e611b4fd-3f89-4410-88a2-a146ac143a84" />
 
