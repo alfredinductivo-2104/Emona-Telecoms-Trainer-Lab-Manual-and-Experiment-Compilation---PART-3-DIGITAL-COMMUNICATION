@@ -75,9 +75,10 @@ In the next part of this experiment, a Adder module is added in order to add the
 
 #### 3.1 OBSERVATION
 
+In this setup, it is observed that the insertion of the Adder module has combined the two separate phase-modulated streams into a single complex output known as the QPSK signal. Looking at the oscilloscope, the red waveform now displays the final composite QPSK signal, which appears as a high-density burst of carrier waves where the phase shifts continuously to represent the combined even and odd bit pairs. On the other hand, the yellow waveform shows a low-frequency, irregular signal with a peak-to-peak voltage (Vpp) of 544.0mV and a frequency of 60.10Hz, indicating it is likely monitoring a filtered or auxiliary component rather than the primary carrier.
+
 <img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/23873e38-5030-4802-af60-0c776be02466" />
 
-In this setup, it is observed that the insertion of the Adder module has combined the two separate phase-modulated streams into a single complex output known as the QPSK signal. Looking at the oscilloscope, the red waveform now displays the final composite QPSK signal, which appears as a high-density burst of carrier waves where the phase shifts continuously to represent the combined even and odd bit pairs. On the other hand, the yellow waveform shows a low-frequency, irregular signal with a peak-to-peak voltage (Vpp) of 544.0mV and a frequency of 60.10Hz, indicating it is likely monitoring a filtered or auxiliary component rather than the primary carrier.
 
 ---
 
@@ -91,7 +92,7 @@ The two digital signals (Even and Odd bit streams) each have a bit rate that is 
 
 The Multiplier’s output shows a high-frequency carrier whose phase reverses (180° shift) depending on whether the input bit is logic 1 or logic 0. The amplitude remains constant, but the phase changes according to the digital data. This phase inversion characteristic is the defining feature of a Binary Phase Shift Keying (BPSK) signal.
 
-**Q3: What type of signal is present on the Multipliers outptu?**  
+**Q3: What type of signal is present on the Multipliers output?**  
 
 The signal present at the Multiplier’s output is a Double Sideband Suppressed Carrier (DSBSC) modulated signal carrying digital information. Since the carrier is multiplied by a bipolar digital signal, the result is a BPSK waveform, which is a special case of DSBSC modulation with phase variations representing binary data.
 
