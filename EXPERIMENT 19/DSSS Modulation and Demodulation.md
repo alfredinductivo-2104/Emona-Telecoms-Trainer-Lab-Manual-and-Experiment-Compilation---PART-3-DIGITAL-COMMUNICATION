@@ -88,71 +88,80 @@ In this setup, it is observed that using a different PN sequence for the local c
 
 ### 5. DSSS and Deliberate Interference (Jamming)
 
-In the next part of the experiment, we will be modifying the previous setup in order to make the demodulator's local carrier a different PN sequence to the transmitter carrier. Refer the connection to the figure below.
+Interference occurs when an unwanted electrical signal gets added to the transmitted signal (typically in the channel) and changes it enough to change the recovered message. Electrical noise is a significant source of unintentional interference.
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/0cbd51eb-3d3d-415e-b372-d67b6621b5a0" />
+However, sometimes noise is deliberately added to the transmitted signal for the purpose of interfering or "jamming" it. In the next part of the experiment models deliberate interference to show how spread spectrum signals are highly resistant to it. Refer the connection to the figure and block diagram below.
+
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/ec70c60c-d65e-447c-84ca-3a61cea8f2c8" />
+
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/d4d9fe44-bd5f-4719-b954-31dbd4e468fa" />
 
 #### 5.1 OBSERVATION
 
-In this setup, it is observed that using a different PN sequence for the local carrier in the demodulator results in a failure to recover the original message. While the red waveform (Channel 1) still shows the reference 2kHz sine wave message with a peak-to-peak voltage (Vpp) of 4V, the yellow waveform (Channel 2) no longer displays a recognizable sinusoidal shape. Instead, the output consists of low-amplitude, unstructured noise with a peak-to-peak voltage (Vpp) of only 725.7mV.
+In this setup, it is observed that the addition of a Jamming signal in the communication channel creates significant distortion in the transmitted signal, yet the system successfully recovers the message. Looking at the oscilloscope, the red waveform (Channel 1) represents the DSSS signal with interference, which now appears as a highly erratic and noisy high-frequency burst. The yellow waveform (Channel 2) displays the Recovered message, which, despite the heavy interference, maintains a clear sinusoidal shape that matches the original 2kHz source.
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/38c350fd-b579-4c93-b337-6ad44073f0bd" />
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/36d03a32-d0ad-4ab9-b090-ad61e26e0ff1" />
 
-### 6. DSSS and Deliberate Interference (Jamming)
+### 6. DSSS and Deliberate Interference Part 2 (Jamming)
 
-In the next part of the experiment, we will be modifying the previous setup in order to make the demodulator's local carrier a different PN sequence to the transmitter carrier. Refer the connection to the figure below.
+A more sophisticated approach to jamming involves automatically sweeping the jamming signal through a wide range of frequencies to increase the chances of upsetting the transmitted signal. In the next part of the experiment let's you see how spread spectrum handles this kind of jamming signal. Refer the connection to the figure below.
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/0cbd51eb-3d3d-415e-b372-d67b6621b5a0" />
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/20424edf-42b0-4423-85b8-2329bed1eae4" />
 
 #### 6.1 OBSERVATION
 
-In this setup, it is observed that using a different PN sequence for the local carrier in the demodulator results in a failure to recover the original message. While the red waveform (Channel 1) still shows the reference 2kHz sine wave message with a peak-to-peak voltage (Vpp) of 4V, the yellow waveform (Channel 2) no longer displays a recognizable sinusoidal shape. Instead, the output consists of low-amplitude, unstructured noise with a peak-to-peak voltage (Vpp) of only 725.7mV.
+In this setup, it is observed that while the system remains resistant to jamming, the swept-frequency interference introduces more noticeable fluctuations in the recovered output compared to a fixed-tone jammer. On the oscilloscope, the red waveform (Channel 1) shows the DSSS signal combined with a frequency-swept jamming signal, appearing as a dense, high-frequency mass with rapidly shifting characteristics. The yellow waveform (Channel 2) displays the recovered message, which still maintains its general sinusoidal shape despite the more aggressive interference but we can see that the recovered signal is more jammed than the previous setup. 
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/38c350fd-b579-4c93-b337-6ad44073f0bd" />
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/60ce2d93-c85a-45e9-a2fd-18fe14d15611" />
 
-### 7. DSSS and Deliberate Interference (Jamming)
+### 7. DSSS and Deliberate Interference Part 3 (Jamming)
 
-In the next part of the experiment, we will be modifying the previous setup in order to make the demodulator's local carrier a different PN sequence to the transmitter carrier. Refer the connection to the figure below.
+In the next part of the experiment, a much more sophisticated approach to jamming is implemented using a Noise signal added to the recovered message. Refer the connection to the figure below.
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/0cbd51eb-3d3d-415e-b372-d67b6621b5a0" />
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/9d4935fc-396b-450a-945b-dc5b73de37b9" />
 
 #### 7.1 OBSERVATION
 
-In this setup, it is observed that using a different PN sequence for the local carrier in the demodulator results in a failure to recover the original message. While the red waveform (Channel 1) still shows the reference 2kHz sine wave message with a peak-to-peak voltage (Vpp) of 4V, the yellow waveform (Channel 2) no longer displays a recognizable sinusoidal shape. Instead, the output consists of low-amplitude, unstructured noise with a peak-to-peak voltage (Vpp) of only 725.7mV.
+In this setup, it is observed that the more sophisticated jamming signal creates a noticeably more distorted and unstable output compared to the previous fixed or basic swept jamming experiments. The red waveform (Channel 1) shows a dense, highly irregular mass of interference with a peak-to-peak voltage (Vpp) of 3.800V. Consequently, the yellow waveform (Channel 2) displays a recovered message that is much more jagged and inconsistent in shape, with its dropping to 592.00mV.
 
-<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/38c350fd-b579-4c93-b337-6ad44073f0bd" />
-
-
-
-
-
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/e611b4fd-3f89-4410-88a2-a146ac143a84" />
 
 ---
 
 ## LAB QUESTIONS AND ANSWERS:
 
-**Q1: What is the relationship between the bit rate of these two digital signals and the bit rate of the Sequence Generator module's output?**
+**Q1: What feature of the Multiplier's output suggests that its basically a DSBSC signal?**
 
-The two digital signals (Even and Odd bit streams) each have a bit rate that is half of the original Sequence Generator’s output bit rate. This is because the serial data stream is divided into two parallel streams using a serial-to-parallel converter. Since alternate bits are separated (even bits to one channel and odd bits to another), each channel carries only half of the total bits, reducing the bit rate by a factor of two.
+The Multiplier’s output shows that the carrier (PN sequence) is present only when multiplied by the message and does not appear as a separate constant component. There is no distinct carrier frequency visible on its own, indicating that the carrier is suppressed. The output consists of sideband components shaped by the message signal, which is the defining characteristic of a Double Sideband Suppressed Carrier (DSBSC) signal.
 
-**Q2: What feature of the Multiplier's output suggests that its a BPSK signal?**  
+**Q2: Why is the DSSS signal so large when it's supposed to be small and indistinguishable from noise?**  
 
-The Multiplier’s output shows a high-frequency carrier whose phase reverses (180° shift) depending on whether the input bit is logic 1 or logic 0. The amplitude remains constant, but the phase changes according to the digital data. This phase inversion characteristic is the defining feature of a Binary Phase Shift Keying (BPSK) signal.
+In the laboratory setup, the DSSS signal appears large because it is generated and observed in a controlled environment with minimal background noise and sufficient signal amplitude for measurement. In real-world long-distance transmission, the signal energy is spread over a wide bandwidth, making the power spectral density very low and difficult to distinguish from noise.
 
-**Q3: What type of signal is present on the Multipliers outptu?**  
+**Q3: Why isn't there any signal out of the DSSS modulator when you're not talking, etc?**  
 
-The signal present at the Multiplier’s output is a Double Sideband Suppressed Carrier (DSBSC) modulated signal carrying digital information. Since the carrier is multiplied by a bipolar digital signal, the result is a BPSK waveform, which is a special case of DSBSC modulation with phase variations representing binary data.
+When there is no input message, the message signal amplitude is nearly zero. Since DSSS is implemented using multiplication, multiplying the PN sequence by zero results in zero output. Therefore, no significant transmitted signal is observed during silence.
+
+**Q4: What does the signal out of the low pass filter look like?**  
+
+The signal at the output of the low pass filter resembles the original baseband message signal. After despreading in the product detector, the high-frequency PN components are removed by the filter, leaving a low-frequency waveform that matches the original sine wave or speech signal, although it may contain some residual noise.
+
+**Q5: Why does using the wrong PN sequence for the local carrier cause the product detector output to look like this?**  
+
+Using an incorrect PN sequence means the receiver is not synchronized with the transmitter. As a result, the despreading process fails because the multiplied components do not align in frequency and phase. Instead of coherently adding to reconstruct the message, the components cancel randomly, producing a low-amplitude noise-like output rather than the original signal.
+
+**Q6: Why doesn't the jamming signal interference with the recovery of the message ?**  
+
+The jamming signal typically occupies a narrow frequency band, while the DSSS signal is spread across a wide bandwidth. During despreading, the correct PN sequence compresses the spread signal energy back into the original narrowband message, while the narrowband jammer becomes spread out over a wide bandwidth. This significantly reduces the jammer’s power density in the recovered signal, allowing the original message to be recovered with minimal distortion.
 
 ---
 
 ## CONCLUSIONS:
-After analyzing the gathered data and observations about Quadrature Phase Shift Keying (QPSK), the following conclusions have been made:
-- QPSK is formed by combining two BPSK signals that are 90° out of phase with each other.
-- The serial-to-parallel conversion reduces the bit rate of each individual stream to half of the original input bit rate.
-- Each Multiplier module produces a BPSK signal, identifiable by its constant amplitude and phase reversals.
-- The Adder module successfully combines the two orthogonal BPSK signals into a single QPSK waveform.
-- QPSK improves spectral efficiency by transmitting two bits per symbol while occupying the same bandwidth as a single BPSK signal.
-- Phase discrimination in the receiver allows proper recovery of the even and odd bit streams using product detectors.
-- Although QPSK transmits two bits per symbol, the overall data rate is not doubled because the bit stream is divided into two parallel channels.
-- QPSK significantly improves spectral efficiency, requiring only half the bandwidth of BPSK for the same bit rate.
-- The constant amplitude nature of QPSK makes it more power-efficient compared to amplitude-based modulation schemes.
+After analyzing the gathered data and observations about Direct Sequence Spread Spectrum (DSSS) Modulation and Demodulation, the following conclusions have been made:
+- DSSS is fundamentally a DSBSC modulation scheme that uses a high-speed pseudo-noise (PN) sequence instead of a sinusoidal carrier.
+- The spreading process distributes the message energy across a much wider bandwidth, increasing resistance to noise and interference.
+- Successful demodulation requires an identical and synchronized PN sequence; otherwise, the recovered signal appears as noise.
+- The product detector combined with a low pass filter effectively despreads the signal and reconstructs the original message.
+- Using a mismatched PN sequence demonstrates the inherent security of DSSS, as unauthorized receivers cannot easily recover the transmitted information.
+- DSSS shows strong resistance to deliberate interference (jamming), including fixed-tone, swept-frequency, and noise-based jamming signals.
+- During despreading, the desired signal is compressed back to baseband while interference is spread out, reducing its impact on the recovered output.
