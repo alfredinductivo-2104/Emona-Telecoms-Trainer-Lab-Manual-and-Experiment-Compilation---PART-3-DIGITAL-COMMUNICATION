@@ -100,15 +100,15 @@ It is observed that the red waveform is the original analog message (sinewave) a
 
 ## LAB QUESTIONS AND ANSWERS:
 
-**Q1: What does the PCM Decoder stepped output tell you about the type of signal that is?  **
+**Q1: What does the PCM Decoder stepped output tell you about the type of signal that is?**
 
 The stepped output of the PCM Decoder shows that the signal is a pulse-amplitude modulated (PAM) version of the original analog signal. Each step corresponds to a discrete voltage level representing a sampled value of the original signal.
 
-**Q2: What must be done to the PCM Decoder Module output to reconstruct the message properly? **  
+**Q2: What must be done to the PCM Decoder Module output to reconstruct the message properly?**  
 
 To properly reconstruct the original message, the stepped output must be passed through a low-pass filter. This smooths out the steps and produces a continuous analog signal that approximates the original waveform.
 
-**Q3: Even though the two signals look and sound the same, why isn't the reconstructed message a perfect copy of the original message? ** 
+**Q3: Even though the two signals look and sound the same, why isn't the reconstructed message a perfect copy of the original message?** 
 
 The reconstructed message isn’t perfect because of quantization error. Each sample is rounded to the nearest quantization level during encoding, so some small differences between the original and decoded signals are inevitable. Additionally, any sampling or filtering limitations may also introduce minor distortions.
 
