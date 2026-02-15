@@ -27,7 +27,13 @@ In this experiment, we will be using the Emona Telecoms-Trainer 101 to set up a 
 
 ## SUMMARY OF FINDINGS AND RESULTS:
 
-### 1. Generating a DSSS signal using a simple message 
+### 1. Setting up a Bandwidth Limited Signal
+
+In this experiment, we will begin by producing a bandwidth-limited signal, which will be used in the next parts of the experiment. In this part of the experiment, any modulation scheme can be used, but for simplicity, we will use a DSBSC signal. Refer the connection to the figure and block diagram below.
+
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/1f8b7be5-8594-4c1b-b6ee-ef2c02b60299" />
+
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/66ba91a9-30c9-4b70-87b3-51e6d6aa4fe7" />
 
 
 
