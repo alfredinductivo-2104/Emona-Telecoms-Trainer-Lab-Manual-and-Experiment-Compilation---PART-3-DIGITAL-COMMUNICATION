@@ -99,7 +99,7 @@ It is observed that the restored digital signal (yellow waveform) is generated b
 
 When the digital signal is logic 0, the ASK signal has approximately 0 V amplitude, since the carrier is disconnected by the analog switch.
 
-**Q3: What feature of the ASK Signal suggests that it's an AM Signal**  
+**Q3: What feature of the ASK Signal suggests that it's an AM Signal?**  
 
 The envelope of the ASK signal follows the shape of the digital data. The carrier’s amplitude varies while its frequency remains constant, which is characteristic of amplitude modulation (AM).
 
