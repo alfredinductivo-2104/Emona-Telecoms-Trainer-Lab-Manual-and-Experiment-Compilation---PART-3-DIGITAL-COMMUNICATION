@@ -35,10 +35,14 @@ In this experiment, we will begin by producing a bandwidth-limited signal, which
 
 <img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/66ba91a9-30c9-4b70-87b3-51e6d6aa4fe7" />
 
-
-
 #### 1.1 OBSERVATION
 
+it is observe that the oscilloscope shows the successful generation of a DSBSC (Double Sideband Suppressed Carrier) signal through the multiplication of a 2 kHz message signal and a 100 kHz carrier. The red waveform on Channel 1 represents the original message signal, while the yellow waveform on Channel 2 displays the modulated output. 
+
+<img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/ead4bbb5-e8a8-4721-ac57-00c726059c85" />
+
+To know more about Bandwidth limited signals proceed to Experiment 14  
+[ EXPERIMENT 14/Bandwidth Limiting and Restoring Digital Signal.md)](https://github.com/alfredinductivo-2104/Emona-Telecoms-Trainer-Lab-Manual-and-Experiment-Compilation---PART-3-DIGITAL-COMMUNICATION/blob/645b5ab63a04476e3ead1198147e6e05916bf87b/EXPERIMENT%2014/Bandwidth%20Limiting%20and%20Restoring%20Digital%20Signal.md)
 
 ### 2. Generating a DSSS signal using speech
 
