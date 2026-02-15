@@ -76,12 +76,12 @@ https://github.com/user-attachments/assets/e0860a3c-3797-44b9-95bb-5a021905cc98
 
 ## LAB QUESTIONS AND ANSWERS:
 
-**Q1:What type of sampling is shown in the first part of the experiment? and What two features of the sampled signal confirm this? **
+**Q1: What type of sampling is shown in the first part of the experiment? and What two features of the sampled signal confirm this?**
 
 The output shown was a Natural Sampling.
 This was a Natural Sampling because the sample voltages was affected during the sampling and the signal's voltage returns to zero volts between the samples. 
 
-**Q2:What two features of the sampled signal confirm that the set-up models the sample-and-hold scheme?**  
+**Q2: What two features of the sampled signal confirm that the set-up models the sample-and-hold scheme?**  
 
 The first feauture that shows that the sampled signal upholds a sample-and-hold scheme is there are no spaces found in between the samples. Then, the sample voltages doesn't change during the sampling process. 
 
@@ -93,7 +93,7 @@ Aliasing
 
 4kHz (2 × 2kHz)
 
-**Q4: Why is the actual minimum sampling frequency higher than the theoretical minimum that you calculated for Question 4**
+**Q5: Why is the actual minimum sampling frequency higher than the theoretical minimum that you calculated for Question 4?**
 
 The actual minimum sampling frequency higher than the theoretical minimum calculated because the filters are not that accurate and their cut off are not instantenous.
 
