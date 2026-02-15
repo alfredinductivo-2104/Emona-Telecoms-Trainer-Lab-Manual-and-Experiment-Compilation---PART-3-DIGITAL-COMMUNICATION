@@ -101,36 +101,36 @@ It is observed that as we adjust the cutoff frequency control, the output signal
 
 ## LAB QUESTIONS AND ANSWERS:
 
-**Q1: Why does bandwidth limiting of the channel cause the PCM Decoder module to output incorrect voltage as well as correct one?  **
+**Q1: Why does bandwidth limiting of the channel cause the PCM Decoder module to output incorrect voltage as well as correct one?**
 
 Bandwidth limiting removes or attenuates the higher-frequency components of the PCM signal that are responsible for sharp pulse transitions. This causes pulse distortion and timing errors, leading the decoder to sometimes misinterpret logic levels and output incorrect voltages.
 
-**Q2: If this were a communication system transmitting speech, what would these errors sound like when the message is reconstructed? **  
+**Q2: If this were a communication system transmitting speech, what would these errors sound like when the message is reconstructed?**  
 
 These errors would sound like distortion, muffling, crackling noises, or brief dropouts in the reconstructed speech. In severe cases, parts of the speech may become unintelligible.
 
-**Q3: What two things are happening to cause the digital signal to change shape? ** 
+**Q3: What two things are happening to cause the digital signal to change shape?** 
 
 a. Attenuation of high-frequency harmonics due to limited bandwidth
 b. Phase shifting of frequency components, causing pulse spreading and intersymbol interference
 
-**Q4: What other change to your communication system distorts the digital signal in the same way as increasing its bit rate? ** 
+**Q4: What other change to your communication system distorts the digital signal in the same way as increasing its bit rate?** 
 
 Reducing the channel bandwidth (lowering the LPF cutoff frequency) distorts the digital signal in the same way as increasing the bit rate, since both reduce the ratio of bandwidth to data rate.
 
-**Q5: Although the restored digital signal is almost identical to the original digital signal, there is a difference. Can you see what it is? ** 
+**Q5: Although the restored digital signal is almost identical to the original digital signal, there is a difference. Can you see what it is?** 
 
 Yes. The restored signal shows slight timing delays, reduced amplitude accuracy, and minor jitter at the transitions compared to the original digital signal.
 
-**Q6: Can this difference be ignored? ** 
+**Q6: Can this difference be ignored?** 
 
 In many practical digital systems, this difference can be ignored as long as the logic levels remain within valid thresholds. However, at higher data rates or in noisy environments, these differences may lead to bit errors and cannot be ignored.
 
-**Q7: What do some DC Voltages cause the comparator to output the wrong information? ** 
+**Q7: What do some DC Voltages cause the comparator to output the wrong information?** 
 
 DC voltages that are close to the comparator’s threshold voltage can cause incorrect outputs, as small noise or distortion can force the comparator to switch states unintentionally.
 
-**Q8: Why does the comparator begin to output the wrong information when this control is turned enough ** 
+**Q8: Why does the comparator begin to output the wrong information when this control is turned enough?** 
 
 As the control is adjusted further, distortion and noise increase, causing the input signal to cross the comparator threshold at incorrect times. This results in false triggering and incorrect logic outputs.
 
